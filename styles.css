@@ -1,0 +1,8 @@
+.main-banner {
+  min-height: 70vh;
+  /* background-image: url("https://cdn.pixabay.com/photo/2020/04/22/12/06/adventure-5077760_960_720.jpg"); */
+  background-image: url("https://images3.alphacoders.com/152/thumb-1920-152779.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}

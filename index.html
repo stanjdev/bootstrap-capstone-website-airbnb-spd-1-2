@@ -1,0 +1,594 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Airbnb: Vacation Rentals, Cabins, Beach Houses, and More</title>
+  <link rel='icon' href='data:image/png;base64,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' type='image/x-icon' sizes="16x16" />
+  <link rel="canonical" href="https://getbootstrap.com/docs/5.0/examples/album/">
+  <link rel="stylesheet" href="styles.css">
+  <!-- Bootstrap core CSS -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+  <style>
+    .bd-placeholder-img {
+      font-size: 1.125rem;
+      text-anchor: middle;
+      -webkit-user-select: none;
+      -moz-user-select: none;
+      user-select: none;
+    }
+
+    @media (min-width: 768px) {
+      .bd-placeholder-img-lg {
+        font-size: 3.5rem;
+      }
+    }
+  </style>
+</head>
+<body>
+  
+
+<header>
+  <div class="collapse bg-dark" id="navbarHeader">
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-8 col-md-7 py-4">
+          <h4 class="text-white">About</h4>
+          <p class="text-muted">Add some information about the album below, the author, or any other background context. Make it a few sentences long so folks can pick up some informative tidbits. Then, link them off to some social networking sites or contact information.</p>
+        </div>
+        <div class="col-sm-4 offset-md-1 py-4">
+          <h4 class="text-white">Contact</h4>
+          <ul class="list-unstyled">
+            <li><a href="#" class="text-white">Follow on Twitter</a></li>
+            <li><a href="#" class="text-white">Like on Facebook</a></li>
+            <li><a href="#" class="text-white">Email me</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="navbar navbar-dark bg-dark shadow-sm">
+    <div class="container">
+      <a href="#" class="navbar-brand d-flex align-items-center">
+        <img src="pngaaa.com-107000.png" width="30" height="30" alt="airbnb logo" style="margin-right: 7px;">
+        <strong>airbnb</strong>
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarHeader" aria-controls="navbarHeader" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+    </div>
+  </div>
+</header>
+
+<main>
+
+  <section class="py-5 text-center container main-banner">
+    <!-- TOP FORM -->
+    <div class="col d-flex justify-content-around">
+      <a class="text-light" href="#">Places to stay</a>
+      <a class="text-light" href="#">Experiences</a>
+      <a class="text-light" href="#">Online Experiences</a>
+    </div>
+    <div class="container py-2 text d-flex justify-content-center">
+      <form class="form-inline">
+        <label class="sr-only" for="inlineFormInputName2">Location</label>
+        <input type="text" class="form-control mb-2 mr-sm-2" id="inlineFormInputName2" placeholder="Where are you going?">
+      
+        <label class="sr-only" for="inlineFormInputGroupUsername2">Check in</label>
+        <div class="input-group mb-2 mr-sm-2">
+          <div class="input-group-prepend">
+            <div class="input-group-text">Check in</div>
+          </div>
+          <input type="text" class="form-control" id="inlineFormInputGroupUsername2" placeholder="Add dates">
+        </div>
+        <label class="sr-only" for="inlineFormInputGroupUsername2">Check Out</label>
+        <div class="input-group mb-2 mr-sm-2">
+          <div class="input-group-prepend">
+            <div class="input-group-text">Check in</div>
+          </div>
+          <input type="text" class="form-control" id="inlineFormInputGroupUsername2" placeholder="Add dates">
+        </div>
+      
+        <div class="form-group">
+          <label class="sr-only" for="exampleFormControlSelect1">Guests</label>
+          <select class="form-control" id="exampleFormControlSelect1">
+            <option>1</option>
+            <option>2</option>
+            <option>3</option>
+            <option>4</option>
+            <option>5</option>
+            <option>6</option>
+            <option>7</option>
+            <option>8</option>
+            <option>9</option>
+            <option>10</option>
+          </select>
+        </div>
+      
+        <button type="submit" class="btn btn-danger mb-2">Submit</button>
+      </form>
+    </div>
+
+    <div class="row py-lg-5">
+      <div class="col-lg-6 col-md-8 mx-auto">
+        <!-- <h1 class="fw-light">Album example</h1> -->
+        <p class="lead text-black font-weight-normal">Not sure where to go? Perfect.</p>
+        <p>
+          <a href="#" class="btn btn-light my-2">I'm flexible</a>
+          <!-- <a href="#" class="btn btn-secondary my-2">Secondary action</a> -->
+        </p>
+      </div>
+    </div>
+  </section>
+
+
+  <div class="album py-5 bg-light">
+    <div class="container">
+      
+
+
+      <h2>Explore nearby</h2>
+      <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
+
+        <div class="col">
+          <div class="card shadow-sm d-flex">
+            <img class="rounded" src="https://a0.muscache.com/im/pictures/fe8fa537-f8ab-45a3-aae9-723b395819a1.jpg?im_q=medq&im_w=240" width="60" height="60" alt="Outdoor getaways">            
+            <div class="card-body">
+              <span class="card-text">Los Angeles</span> 
+              <br>
+              <small class="font-weight-light">30 minute drive</small>
+            </div>
+          </div>
+        </div>
+        
+        <div class="col">
+          <div class="card shadow-sm">
+            <img src="https://a0.muscache.com/im/pictures/36f53e61-db8d-403c-9122-5b761c0e4264.jpg?im_w=480" width="100%" height="225" alt="Outdoor getaways">
+            
+            <div class="card-body">
+              <p class="card-text">Unique stays</p>
+              <div class="d-flex justify-content-between align-items-center">
+                <div class="btn-group">
+                  <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
+                  <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button>
+                </div>
+                <small class="text-muted">9 mins</small>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card shadow-sm">
+            <img src="https://a0.muscache.com/im/pictures/7d82ca14-56e5-4465-8218-dcfa7d69b6ac.jpg?im_w=320" width="100%" height="225" alt="Outdoor getaways">
+            
+            <div class="card-body">
+              <p class="card-text">Entire homes</p>
+              <div class="d-flex justify-content-between align-items-center">
+                <div class="btn-group">
+                  <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
+                  <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button>
+                </div>
+                <small class="text-muted">9 mins</small>
+              </div>
+            </div>
+          </div>
+        </div>
+        
+        <div class="col">
+          <div class="card shadow-sm">
+            <img src="https://a0.muscache.com/im/pictures/10a638e1-6aff-4313-8033-1275cec83987.jpg?im_w=320" width="100%" height="225" alt="Outdoor getaways">
+            
+            <div class="card-body">
+              <p class="card-text">Pets allowed</p>
+              <div class="d-flex justify-content-between align-items-center">
+                <div class="btn-group">
+                  <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
+                  <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button>
+                </div>
+                <small class="text-muted">9 mins</small>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card shadow-sm">
+            <svg class="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#55595c"/><text x="50%" y="50%" fill="#eceeef" dy=".3em">Thumbnail</text></svg>
+
+            <div class="card-body">
+              <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+              <div class="d-flex justify-content-between align-items-center">
+                <div class="btn-group">
+                  <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
+                  <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button>
+                </div>
+                <small class="text-muted">9 mins</small>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card shadow-sm">
+            <svg class="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#55595c"/><text x="50%" y="50%" fill="#eceeef" dy=".3em">Thumbnail</text></svg>
+
+            <div class="card-body">
+              <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+              <div class="d-flex justify-content-between align-items-center">
+                <div class="btn-group">
+                  <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
+                  <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button>
+                </div>
+                <small class="text-muted">9 mins</small>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col">
+          <div class="card shadow-sm">
+            <svg class="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#55595c"/><text x="50%" y="50%" fill="#eceeef" dy=".3em">Thumbnail</text></svg>
+
+            <div class="card-body">
+              <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+              <div class="d-flex justify-content-between align-items-center">
+                <div class="btn-group">
+                  <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
+                  <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button>
+                </div>
+                <small class="text-muted">9 mins</small>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card shadow-sm">
+            <svg class="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#55595c"/><text x="50%" y="50%" fill="#eceeef" dy=".3em">Thumbnail</text></svg>
+
+            <div class="card-body">
+              <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+              <div class="d-flex justify-content-between align-items-center">
+                <div class="btn-group">
+                  <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
+                  <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button>
+                </div>
+                <small class="text-muted">9 mins</small>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card shadow-sm">
+            <svg class="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#55595c"/><text x="50%" y="50%" fill="#eceeef" dy=".3em">Thumbnail</text></svg>
+
+            <div class="card-body">
+              <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+              <div class="d-flex justify-content-between align-items-center">
+                <div class="btn-group">
+                  <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
+                  <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button>
+                </div>
+                <small class="text-muted">9 mins</small>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+
+
+
+
+      <h2>Live Anywhere</h2>
+      <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
+        <div class="col">
+          <a href="#" class="text-dark">
+            <div class="card shadow-sm">
+              <img src="https://a0.muscache.com/im/pictures/2f13349d-879d-43c6-83e3-8e5679291d53.jpg?im_w=480" width="100%" height="225" alt="Outdoor getaways">            
+              <div class="card-body">
+                <p class="card-text">Outdoor getaways</p>
+              </div>
+            </div>
+          </a>
+        </div>
+
+        <div class="col">
+          <a href="#" class="text-dark">
+            <div class="card shadow-sm">
+              <img src="https://a0.muscache.com/im/pictures/36f53e61-db8d-403c-9122-5b761c0e4264.jpg?im_w=480" width="100%" height="225" alt="Outdoor getaways">
+              <div class="card-body">
+                <p class="card-text">Unique stays</p>
+              </div>
+            </div>
+          </a>
+        </div>
+
+        <div class="col">
+          <a href="#" class="text-dark">
+            <div class="card shadow-sm">
+              <img src="https://a0.muscache.com/im/pictures/7d82ca14-56e5-4465-8218-dcfa7d69b6ac.jpg?im_w=320" width="100%" height="225" alt="Outdoor getaways">
+              <div class="card-body">
+                <p class="card-text">Entire homes</p>
+              </div>
+            </div>
+          </a>
+        </div>
+        
+        <div class="col">
+          <a href="#" class="text-dark">
+            <div class="card shadow-sm">
+              <img src="https://a0.muscache.com/im/pictures/10a638e1-6aff-4313-8033-1275cec83987.jpg?im_w=320" width="100%" height="225" alt="Outdoor getaways">
+              <div class="card-body">
+                <p class="card-text">Pets allowed</p>
+              </div>
+            </div>
+          </a>
+        </div>
+      </div>
+
+
+
+      <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
+        <div class="col">
+          <div class="card shadow-sm">
+            <img src="https://a0.muscache.com/im/pictures/2f13349d-879d-43c6-83e3-8e5679291d53.jpg?im_w=480" width="100%" height="225" alt="Outdoor getaways">            
+
+            <div class="card-body">
+              <p class="card-text">Outdoor getaways</p>
+              <div class="d-flex justify-content-between align-items-center">
+                <div class="btn-group">
+                  <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
+                  <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button>
+                </div>
+                <small class="text-muted">9 mins</small>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card shadow-sm">
+            <img src="https://a0.muscache.com/im/pictures/36f53e61-db8d-403c-9122-5b761c0e4264.jpg?im_w=480" width="100%" height="225" alt="Outdoor getaways">
+            
+            <div class="card-body">
+              <p class="card-text">Unique stays</p>
+              <div class="d-flex justify-content-between align-items-center">
+                <div class="btn-group">
+                  <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
+                  <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button>
+                </div>
+                <small class="text-muted">9 mins</small>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card shadow-sm">
+            <img src="https://a0.muscache.com/im/pictures/7d82ca14-56e5-4465-8218-dcfa7d69b6ac.jpg?im_w=320" width="100%" height="225" alt="Outdoor getaways">
+            
+            <div class="card-body">
+              <p class="card-text">Entire homes</p>
+              <div class="d-flex justify-content-between align-items-center">
+                <div class="btn-group">
+                  <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
+                  <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button>
+                </div>
+                <small class="text-muted">9 mins</small>
+              </div>
+            </div>
+          </div>
+        </div>
+        
+        <div class="col">
+          <div class="card shadow-sm">
+            <img src="https://a0.muscache.com/im/pictures/10a638e1-6aff-4313-8033-1275cec83987.jpg?im_w=320" width="100%" height="225" alt="Outdoor getaways">
+            
+            <div class="card-body">
+              <p class="card-text">Pets allowed</p>
+              <div class="d-flex justify-content-between align-items-center">
+                <div class="btn-group">
+                  <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
+                  <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button>
+                </div>
+                <small class="text-muted">9 mins</small>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card shadow-sm">
+            <svg class="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#55595c"/><text x="50%" y="50%" fill="#eceeef" dy=".3em">Thumbnail</text></svg>
+
+            <div class="card-body">
+              <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+              <div class="d-flex justify-content-between align-items-center">
+                <div class="btn-group">
+                  <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
+                  <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button>
+                </div>
+                <small class="text-muted">9 mins</small>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card shadow-sm">
+            <svg class="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#55595c"/><text x="50%" y="50%" fill="#eceeef" dy=".3em">Thumbnail</text></svg>
+
+            <div class="card-body">
+              <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+              <div class="d-flex justify-content-between align-items-center">
+                <div class="btn-group">
+                  <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
+                  <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button>
+                </div>
+                <small class="text-muted">9 mins</small>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col">
+          <div class="card shadow-sm">
+            <svg class="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#55595c"/><text x="50%" y="50%" fill="#eceeef" dy=".3em">Thumbnail</text></svg>
+
+            <div class="card-body">
+              <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+              <div class="d-flex justify-content-between align-items-center">
+                <div class="btn-group">
+                  <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
+                  <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button>
+                </div>
+                <small class="text-muted">9 mins</small>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card shadow-sm">
+            <svg class="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#55595c"/><text x="50%" y="50%" fill="#eceeef" dy=".3em">Thumbnail</text></svg>
+
+            <div class="card-body">
+              <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+              <div class="d-flex justify-content-between align-items-center">
+                <div class="btn-group">
+                  <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
+                  <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button>
+                </div>
+                <small class="text-muted">9 mins</small>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card shadow-sm">
+            <svg class="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#55595c"/><text x="50%" y="50%" fill="#eceeef" dy=".3em">Thumbnail</text></svg>
+
+            <div class="card-body">
+              <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+              <div class="d-flex justify-content-between align-items-center">
+                <div class="btn-group">
+                  <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
+                  <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button>
+                </div>
+                <small class="text-muted">9 mins</small>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+
+      <h2>Discover things to do</h2>
+      <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
+        <div class="col">
+          <a href="#" class="text-dark">
+            <div class="card shadow-sm">
+              <img src="https://a0.muscache.com/im/pictures/ad109d56-2421-40cd-98e6-e114160dc85b.jpg?im_w=320" width="100%" height="300" alt="Sheep">
+              <div class="card-body">
+                <h5>Experiences</h5>
+                <small class="card-text font-weight-light">Find unforgettable activities near you.</small>
+              </div>
+            </div>
+          </a>
+        </div>
+        <div class="col">
+          <a href="#" class="text-dark">
+            <div class="card shadow-sm">
+              <img src="https://a0.muscache.com/im/pictures/0ce799cb-7553-4369-be9e-d0011e0ef636.jpg?im_w=320" width="100%" height="300" alt="Sheep">
+              <div class="card-body">
+                <h5>Online Experiences</h5>
+                <small class="card-text font-weight-light">Live, interactive activities led by Hosts.</small>
+              </div>
+            </div>
+          </a>
+        </div>
+        <div class="col">
+          <a href="#" class="text-dark">
+            <div class="card shadow-sm">
+              <img src="https://a0.muscache.com/im/pictures/3c2676df-0874-45a3-a82f-bbf57ccde1cc.jpg?im_w=320" width="100%" height="300" alt="Sheep">
+              <div class="card-body">
+                <h5>Outdoor collection</h5>
+                <small class="card-text font-weight-light">Experiences that immerse you in nature.</small>
+              </div>
+            </div>
+          </a>
+        </div>
+      </div>
+
+
+
+    </div>
+  </div>
+
+</main>
+
+<footer class="text-black py-5">
+  <div class="container">
+    <p class="float-right mb-1">
+      <a href="#">Back to top</a>
+    </p>
+    <div class="container d-flex">
+      <ul class="list-unstyled">
+        <li><small class="font-weight-bold">ABOUT</small></li>
+        <li><small><a class="text-dark font-weight-light" href="#">How Airbnb works</a></small></li>
+        <li><small><a class="text-dark font-weight-light" href="#">Newsroom</a></small></li>
+        <li><small><a class="text-dark font-weight-light" href="#">Airbnb 2021</a></small></li>
+        <li><small><a class="text-dark font-weight-light" href="#">Investors</a></small></li>
+        <li><small><a class="text-dark font-weight-light" href="#">Airbnb Plus</a></small></li>
+        <li><small><a class="text-dark font-weight-light" href="#">Airbnb Luxe</a></small></li>
+        <li><small><a class="text-dark font-weight-light" href="#">HotelTonight</a></small></li>
+        <li><small><a class="text-dark font-weight-light" href="#">Airbnb for Work</a></small></li>
+        <li><small><a class="text-dark font-weight-light" href="#">Made possible by Hosts</a></small></li>
+        <li><small><a class="text-dark font-weight-light" href="#">Careers</a></small></li>
+        <li><small><a class="text-dark font-weight-light" href="#">Founders' Letter</a></small></li>
+      </ul>
+      <ul class="list-unstyled">
+        <li><small class="font-weight-bold">COMMUNITY</small></li>
+        <li><small><a class="text-dark font-weight-light" href="#">Diversity & Belonging</a></small></li>
+        <li><small><a class="text-dark font-weight-light" href="#">Against Discrimination</a></small></li>
+        <li><small><a class="text-dark font-weight-light" href="#">Accessibility</a></small></li>
+        <li><small><a class="text-dark font-weight-light" href="#">Airbnb Associates</a></small></li>
+        <li><small><a class="text-dark font-weight-light" href="#">Host Afghan refugees</a></small></li>
+        <li><small><a class="text-dark font-weight-light" href="#">Guest Referrals</a></small></li>
+        <li><small><a class="text-dark font-weight-light" href="#">Gift cards</a></small></li>
+        <li><small><a class="text-dark font-weight-light" href="#">Airbnb.org</a></small></li>
+      </ul>
+      <p class="col-md-3 mb-1">Album example is &copy; Bootstrap, but please download and customize it for yourself!</p>
+      <p class="col-md-3 mb-0">New to Bootstrap? <a href="/">Visit the homepage</a> or read our <a href="../getting-started/introduction/">getting started guide</a>.</p>
+
+    </div>
+  </div>
+
+  <hr>
+
+  <div class="container d-flex justify-content-between">
+    <div>
+      <small>&copy; 2021 Airbnb, Inc.</small>
+      <small>•</small>
+      <small>Privacy</small>
+      <small>•</small>
+      <small>Terms</small>
+      <small>•</small>
+      <small>Sitemap</small>
+    </div>
+    <div class="d-flex justify-content-between">
+      <small><a class="text-dark font-weight-bold" href="#"><u>English (US)</u></a></small>
+      <small><a class="text-dark font-weight-bold" href="#"><u>$ USD</u></a></small>
+      <div>
+        <a href="#"><img src="" alt="Facebook"></a>
+        <a href="#"><img src="" alt="Twitter"></a>
+        <a href="#"><img src="" alt="Instagram"></a>
+      </div>
+    </div>
+  </div>
+</footer>
+
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudfla re.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+</body>
+</html>
