@@ -1,6 +1,6 @@
 rubric thing: https://docs.google.com/document/d/1F7oEKH1PXR4rHQf_WP_z8ztVoT0seM0Xl0T8_yxYJp0/edit
 repo: https://github.com/stanjdev/bootstrap-capstone-website-airbnb-spd-1-2 
-
+sample page: https://www.airbnb.com/rooms/48241566?adults=1&location=Costa%20Rica&check_in=2021-12-27&check_out=2021-12-31&translate_ugc=false&federated_search_id=d9b55135-271d-41ed-bee3-dd45daca8162&source_impression_id=p3_1635791973_8thDu%2BGvzAhLCYTd&guests=1
 
 TODO:
 - Get JS hamburger working
