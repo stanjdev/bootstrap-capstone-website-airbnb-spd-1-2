@@ -6,3 +6,15 @@
   background-size: cover;
   background-position: center;
 }
+
+.more-border-radius {
+  border-radius: 7px;
+}
+
+.try-hosting-image {
+  background-image: url('https://a0.muscache.com/im/pictures/5b4dc94a-0b4c-4c27-b50f-9c5a5b93c775.jpg?im_w=720');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-origin: border-box;
+}

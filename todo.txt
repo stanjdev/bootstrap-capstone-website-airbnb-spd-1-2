@@ -1,0 +1,16 @@
+rubric thing: https://docs.google.com/document/d/1F7oEKH1PXR4rHQf_WP_z8ztVoT0seM0Xl0T8_yxYJp0/edit
+repo: https://github.com/stanjdev/bootstrap-capstone-website-airbnb-spd-1-2 
+
+
+TODO:
+- Get JS hamburger working
+- all grids
+- JS moving things, modals maybe
+- sample listing page
+- contact page
+
+
+DONE:
+- bottom 3 image squished
+
+
