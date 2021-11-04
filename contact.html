@@ -78,272 +78,66 @@
 
 <main>
 
-  <section class="py-5 text-center container main-banner">
+  <section class="py-5 text-center container contact-banner">
     <!-- TOP FORM -->
 
-    <div class="container py-2 text d-flex justify-content-center">
-      <form class="form-inline">
-        <label class="sr-only" for="inlineFormInputName2">Location</label>
-        <input type="text" class="form-control mb-2 mr-sm-2" id="inlineFormInputName2" placeholder="Where are you going?">
-      
-        <label class="sr-only" for="inlineFormInputGroupUsername2">Check in</label>
-        <div class="input-group mb-2 mr-sm-2">
-          <div class="input-group-prepend">
-            <div class="input-group-text">Check in</div>
+    <div class="container card shadow-lg p-5 rounded" style='width: 50vw;'>
+      <h4 class="text-center mb-4">Contact us</h4>
+      <form>
+        <div class="form-row">
+          <div class="form-group col-md-6">
+            <label for="inputEmail4">Email</label>
+            <input type="email" class="form-control" id="inputEmail4" placeholder="Email" required>
           </div>
-          <input type="date" style="width: 150px;" class="form-control" name="checkin" id="checkin" id="inlineFormInputGroupUsername2">
+          <div class="form-group col-md-6">
+            <label for="inputPassword4">Name</label>
+            <input type="text" class="form-control" id="inputPassword4" placeholder="Full Name" required>
+          </div>
         </div>
-        <label class="sr-only" for="inlineFormInputGroupUsername2">Check Out</label>
-        <div class="input-group mb-2 mr-sm-2">
-          <div class="input-group-prepend">
-            <div class="input-group-text">Check out</div>
+        <div class="form-group">
+          <label for="inputAddress">Address</label>
+          <input type="text" class="form-control" id="inputAddress" placeholder="1234 Main St">
+        </div>
+        <div class="form-group">
+          <label for="inputAddress2">Address 2</label>
+          <input type="text" class="form-control" id="inputAddress2" placeholder="Apartment, studio, or floor">
+        </div>
+        <div class="form-row">
+          <div class="form-group col-md-6">
+            <label for="inputCity">City</label>
+            <input type="text" class="form-control" id="inputCity">
           </div>
-          <input type="date" style="width: 150px;" class="form-control" name="checkout" id="checkout" id="inlineFormInputGroupUsername2">
+          <div class="form-group col-md-4">
+            <label for="inputState">State</label>
+            <select id="inputState" class="form-control">
+              <option selected>Choose...</option>
+              <option>...</option>
+            </select>
+          </div>
+          <div class="form-group col-md-2">
+            <label for="inputZip">Zip</label>
+            <input type="text" class="form-control" id="inputZip">
+          </div>
         </div>
 
         <div class="form-group">
-          <label class="sr-only" for="exampleFormControlSelect1">Guests</label>
-          <select class="form-control" id="exampleFormControlSelect1">
-            <option>1</option>
-            <option>2</option>
-            <option>3</option>
-            <option>4</option>
-            <option>5</option>
-            <option>6</option>
-            <option>7</option>
-            <option>8</option>
-            <option>9</option>
-            <option>10</option>
-          </select>
+          <label for="exampleFormControlTextarea1">Message: </label>
+          <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" required></textarea>
         </div>
-      
-        <button type="submit" class="btn btn-danger mb-2">Search</button>
-      </form>
-    </div>
-
-    <div class="row py-lg-5">
-      <div class="col-lg-6 col-md-8 mx-auto">
-        <p class="lead text-black font-weight-normal bg-light p-3 mb-2 rounded">Not sure where to go? Perfect.</p>
-        <p>
-          <a href="/costa-rican-villa.html" class="btn btn-primary my-2 p-3 pl-5 pr-5 rounded-pill shadow-lg">I'm flexible</a>
-          <a href="/contact.html" class="btn btn-info my-2 p-3 pl-5 pr-5 rounded-pill shadow-lg">Contact us</a>
-        </p>
-      </div>
-    </div>
-  </section>
-
-
-  <div class="album py-5 bg-light">
-    <div class="container">
-      
-      <!-- EXPLORE NEARBY -->
-      <h2 class="mb-3">Explore nearby</h2>
-      <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3 mb-4">
-        <div class="col-lg-3 col-sm-6 mb-3">
-          <a href="#" class="text-decoration-none text-dark">
-            <div class="d-flex align-items-center">
-              <img class="more-border-radius" src="https://a0.muscache.com/im/pictures/fe8fa537-f8ab-45a3-aae9-723b395819a1.jpg?im_q=medq&im_w=240" width="60" height="60" alt="Outdoor getaways">            
-              <div class="ml-3 ">
-                <span class="">Los Angeles</span> 
-                <br>
-                <small class="font-weight-light">30 minute drive</small>
-              </div>
-            </div>
-          </a>
-        </div>
-        <div class="col-lg-3 col-sm-6 mb-3">
-          <a href="#" class="text-decoration-none text-dark">
-            <div class="d-flex align-items-center">
-              <img class="more-border-radius" src="https://a0.muscache.com/im/pictures/157d3c3b-9403-4d3e-a179-494a4acb3328.jpg?im_q=medq&im_w=240" width="60" height="60" alt="Outdoor getaways">            
-              <div class="ml-3">
-                <span class="">San Diego</span> 
-                <br>
-                <small class="font-weight-light">3 hour drive</small>
-              </div>
-            </div>
-          </a>
-        </div>
-        <div class="col-lg-3 col-sm-6 mb-3">
-          <a href="#" class="text-decoration-none text-dark">
-            <div class="d-flex align-items-center">
-              <img class="more-border-radius" src="https://a0.muscache.com/im/pictures/3a7b8005-28b8-48b8-8efa-0a6a00f7d5d8.jpg?im_q=medq&im_w=240" width="60" height="60" alt="Outdoor getaways">            
-              <div class="ml-3">
-                <span class="">Las Vegas</span> 
-                <br>
-                <small class="font-weight-light">5.5 hour drive</small>
-              </div>
-            </div>
-          </a>
-        </div>
-        <div class="col-lg-3 col-sm-6 mb-3">
-          <a href="#" class="text-decoration-none text-dark">
-            <div class="d-flex align-items-center">
-              <img class="more-border-radius" src="https://a0.muscache.com/im/pictures/d46ba2be-e478-426f-a05d-a973f3a04871.jpg?im_q=medq&im_w=240" width="60" height="60" alt="Outdoor getaways">            
-              <div class="ml-3">
-                <span class="">Henderson</span> 
-                <br>
-                <small class="font-weight-light">5.5 hour drive</small>
-              </div>
-            </div>
-          </a>
-        </div>
-        <div class="col-lg-3 col-sm-6 mb-3">
-          <a href="#" class="text-decoration-none text-dark">
-            <div class="d-flex align-items-center">
-              <img class="more-border-radius" src="https://a0.muscache.com/im/pictures/aff9e173-b551-44e4-80f3-bd9b9d632f8b.jpg?im_q=medq&im_w=240" width="60" height="60" alt="Outdoor getaways">            
-              <div class="ml-3">
-                <span class="">Paradise</span> 
-                <br>
-                <small class="font-weight-light">5.5 hour drive</small>
-              </div>
-            </div>
-          </a>
-        </div>
-        <div class="col-lg-3 col-sm-6 mb-3">
-          <a href="#" class="text-decoration-none text-dark">
-            <div class="d-flex align-items-center">
-              <img class="more-border-radius" src="https://a0.muscache.com/im/pictures/aef20929-0d6a-40e7-8ac9-321ff0edf8c9.jpg?im_q=medq&im_w=240" width="60" height="60" alt="Outdoor getaways">            
-              <div class="ml-3">
-                <span class="">Big Bear Lake</span> 
-                <br>
-                <small class="font-weight-light">3 hour drive</small>
-              </div>
-            </div>
-          </a>
-        </div>
-        <div class="col-lg-3 col-sm-6 mb-3">
-          <a href="#" class="text-decoration-none text-dark">
-            <div class="d-flex align-items-center">
-              <img class="more-border-radius" src="https://a0.muscache.com/im/pictures/06248faf-fafa-4adb-9447-3a393ca625a4.jpg?im_q=medq&im_w=240" width="60" height="60" alt="Outdoor getaways">            
-              <div class="ml-3">
-                <span class="">Palm Springs</span> 
-                <br>
-                <small class="font-weight-light">3 hour drive</small>
-              </div>
-            </div>
-          </a>
-        </div>
-        <div class="col-lg-3 col-sm-6 mb-3">
-          <a href="#" class="text-decoration-none text-dark">
-            <div class="d-flex align-items-center">
-              <img class="more-border-radius" src="https://a0.muscache.com/im/pictures/5d597532-b55a-439d-baf7-9c0875423f44.jpg?im_q=medq&im_w=240" width="60" height="60" alt="Outdoor getaways">            
-              <div class="ml-3">
-                <span class="">San Jose</span> 
-                <br>
-                <small class="font-weight-light">6.5 hour drive</small>
-              </div>
-            </div>
-          </a>
-        </div>
-      </div>
-
-
-      <!-- LIVE ANYWHERE -->
-      <h2 class="mb-3">Live Anywhere</h2>
-      <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3 mb-4">
-        <div class="col-md-3 col-sm-6 col-6">
-          <a href="#" class="text-decoration-none text-dark">
-            <div class="card shadow-sm">
-              <img src="https://a0.muscache.com/im/pictures/2f13349d-879d-43c6-83e3-8e5679291d53.jpg?im_w=480" width="100%" height="225" alt="Outdoor getaways">            
-              <div class="card-body">
-                <p class="card-text">Outdoor getaways</p>
-              </div>
-            </div>
-          </a>
-        </div>
-        <div class="col-md-3 col-sm-6 col-6">
-          <a href="#" class="text-decoration-none text-dark">
-            <div class="card shadow-sm">
-              <img src="https://a0.muscache.com/im/pictures/36f53e61-db8d-403c-9122-5b761c0e4264.jpg?im_w=480" width="100%" height="225" alt="Outdoor getaways">
-              <div class="card-body">
-                <p class="card-text">Unique stays</p>
-              </div>
-            </div>
-          </a>
-        </div>
-        <div class="col-md-3 col-sm-6 col-6">
-          <a href="#" class="text-decoration-none text-dark">
-            <div class="card shadow-sm">
-              <img src="https://a0.muscache.com/im/pictures/7d82ca14-56e5-4465-8218-dcfa7d69b6ac.jpg?im_w=320" width="100%" height="225" alt="Outdoor getaways">
-              <div class="card-body">
-                <p class="card-text">Entire homes</p>
-              </div>
-            </div>
-          </a>
-        </div>
-        <div class="col-md-3 col-sm-6 col-6">
-          <a href="#" class="text-decoration-none text-dark">
-            <div class="card shadow-sm">
-              <img src="https://a0.muscache.com/im/pictures/10a638e1-6aff-4313-8033-1275cec83987.jpg?im_w=320" width="100%" height="225" alt="Outdoor getaways">
-              <div class="card-body">
-                <p class="card-text">Pets allowed</p>
-              </div>
-            </div>
-          </a>
-        </div>
-      </div>
-
-
-      <!-- TRY HOSTING -->
-      <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3 mb-4">
-        <div class="col">
-          <div class="try-hosting-image d-flex align-items-center more-border-radius" style="height: 350px;">
-            <div class="card-body ml-4">
-              <h2 class="text-white">Try hosting</h2>
-              <p class="card-text text-white w-25 font-weight-light">Earn extra income and unlock new opportunities by sharing your space.</p>
-              <div class="d-flex justify-content-between align-items-center">
-                <div class="btn-group">
-                  <button type="button" class="btn btn-md btn-light">Learn More</button>
-                </div>
-              </div>
-            </div>
+        <div class="form-group">
+          <div class="form-check">
+            <input class="form-check-input" type="checkbox" id="gridCheck">
+            <label class="form-check-label" for="gridCheck">
+              Subscribe to our newsletter
+            </label>
           </div>
         </div>
-      </div>
-
-
-      <!-- DISCOVER THINGS TO DO -->
-      <h2 class="mb-3">Discover things to do</h2>
-      <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3 mb-3">
-        <div class="col-12 col-md-6 col-lg-4">
-          <a href="#" class="text-decoration-none text-dark">
-            <div class="card shadow-sm">
-              <img src="https://a0.muscache.com/im/pictures/ad109d56-2421-40cd-98e6-e114160dc85b.jpg?im_w=320" width="100%" height="300" alt="Sheep">
-              <div class="card-body">
-                <h5>Experiences</h5>
-                <small class="card-text font-weight-light">Find unforgettable activities near you.</small>
-              </div>
-            </div>
-          </a>
-        </div>
-        <div class="col-12 col-md-6 col-lg-4">
-          <a href="#" class="text-decoration-none text-dark">
-            <div class="card shadow-sm">
-              <img src="https://a0.muscache.com/im/pictures/0ce799cb-7553-4369-be9e-d0011e0ef636.jpg?im_w=320" width="100%" height="300" alt="Sheep">
-              <div class="card-body">
-                <h5>Online Experiences</h5>
-                <small class="card-text font-weight-light">Live, interactive activities led by Hosts.</small>
-              </div>
-            </div>
-          </a>
-        </div>
-        <div class="col-12 col-md-6 col-lg-4">
-          <a href="#" class="text-decoration-none text-dark">
-            <div class="card shadow-sm">
-              <img src="https://a0.muscache.com/im/pictures/3c2676df-0874-45a3-a82f-bbf57ccde1cc.jpg?im_w=320" width="100%" height="300" alt="Sheep">
-              <div class="card-body">
-                <h5>Outdoor collection</h5>
-                <small class="card-text font-weight-light">Experiences that immerse you in nature.</small>
-              </div>
-            </div>
-          </a>
-        </div>
-      </div>
-
-
-
+        <!-- <button type="submit" class="btn btn-primary">Sign in</button> -->
+        <button class="btn btn-danger">Contact</button>
+      </form>
     </div>
-  </div>
+    
+  </section>
 
 </main>
 
